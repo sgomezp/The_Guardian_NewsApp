@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">The Guardian News</string>
+    <string name="first_time"> Opening news.</string>
+    <string name="no_internet_connection"> No internet connection</string>
+    <string name="no_news">No news found</string>
+    <string name="hint_emptyview">Looking for News</string>
+
+    <string name="refresh_news">Refresh</string>
+    <string name="tools_date">June 07 2017</string>
+    <string name="tools_section">Politics</string>
+    <string name="tools_Headline">Headline</string>
+
+</resources>

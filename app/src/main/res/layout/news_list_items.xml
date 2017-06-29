@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_10"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/news_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="Url" />
+
+        <TextView
+            android:id="@+id/news_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            tools:text="@string/tools_Headline" />
+
+        <TextView
+            android:id="@+id/news_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/news_headline"
+            android:paddingTop="@dimen/padding_5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="normal"
+            tools:text="@string/tools_section" />
+
+        <TextView
+            android:id="@+id/news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/news_section"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/news_headline"
+            android:layout_toEndOf="@id/news_section"
+            android:gravity="end"
+            android:paddingEnd="@dimen/padding_5"
+            android:paddingTop="@dimen/padding_5"
+            android:visibility="visible"
+            tools:text="@string/tools_date" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
